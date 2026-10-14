@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #E6D7C3;
+    font-family: 'Poppins';
+}
+header{
+    background-color:#C08552 ;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    height: 7rem; 
+    justify-content: space-between;
+}
+.logo{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+nav a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #2B2118;
+}
+.menu-hamburguer {
+    display: none;
+}
+#menu-toggle {
+    display: none;
+}
+h1 ,h2, h3 ,h4{
+    font-family: 'Playfair Display', serif;
+}
+h2{
+    padding: 1rem;
+    color: #5A2A1B;
+    font-size: 4rem;
+    text-align: center;
+}
+p{
+    color: #2B2118;
+    padding: 0.2rem;
+}
+section{
+    padding: 80px 0;
+}
+#sobre{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('imagem/local.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    gap:2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#sobre h2{
+    color:#FFF3E0;
+}
+.paragrafo_sobre {
+    text-align: center;
+    padding: 1rem;
+    max-width: 1500px; 
+    font-size: 1.5rem;
+    color:white;
+}
+.introduzir p{
+    color: white;
+}
+.introduzir h1{
+    padding: 2rem;
+    color: #FFF3E0;
+    font-size: 7rem;
+    margin: -30px;
+}
+
+
+form{
+    background-color: #D9D9D9;
+    margin:3rem;
+    padding: 3rem;
+    border-radius: 8px;
+    border: 1px solid #E4D5C3;
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+}
+form h3{
+    text-align: center;
+    font-size: 2rem;
+    color: #6F4E37;
+    padding: 30px;
+}
+#cardapio article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+#cardapio img{
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    max-width: 400px;
+    height: auto;
+}
+
+.informacoes_produto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.informacoes_produto h4 {
+    font-size: 2rem;
+    color: #6F4E37;
+}
+
+.informacoes_produto p {
+    max-width: 450px;
+}
+.adicionar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+button{
+    border-radius: 1000px;
+    background-color: #5A2A1B;
+    color:  #FFF8F0;
+    border: none;
+    cursor: pointer;
+    width:60px;
+    height: 40px;
+}
+
+.lista_depoimentos {
+    display: flex;
+    gap: 1.5rem;
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+.lista_depoimentos article{
+    background-color:#FFF8F0;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1000px;
+}
+/*tabela contatos*/
+table{
+    background-color: #FFF8F0;
+    border-collapse:collapse;
+}
+th{
+    background-color: #C08552;
+}
+td,th{
+    border: 1px solid #D9C2A6;
+    padding: 0.5rem;
+    text-align: left;
+}
+.sugestao fieldset{
+    padding: 2rem;
+    border: 1px solid #C08552;
+    display: flex;
+    flex-direction: column;
+}
+.sugestao fieldset button{
+    width:60px;
+}
+.sugestao fieldset input[type="text"], .sugestao fieldset input[type="tel"]{
+    outline: none;
+    width: 100%;
+    max-width: 1000px;
+}
+.sugestao textarea{
+    width: 100%;
+    max-width: 1000px;
+    outline: none;
+    height: 150px;
+}
+/*rodape*/
+footer{
+    background-color: #5A2A1B;
+    padding: 2rem;
+}
+footer p{
+    color: #FFF8F0;
+}
+.navegar_footer a{
+    color: #FFF8F0;
+}
+/*mobile*/
+@media (max-width: 836px) {
+
+    .menu-hamburguer {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+
+    header {
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #sobre h2{
+        margin: -2rem;
+    }
+    .introduzir {
+        height: 50vh;
+    }
+    .introduzir h1 {
+        font-size: 4rem;
+    }
+    .introduzir p,.paragrafo_sobre{
+        font-size:1.2rem
+    }
+    h2{
+        font-size:3rem;
+        padding: 4rem;
+    }
+    form{
+        margin: -1rem;
+    }
+    #cardapio article {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+        .lista_depoimentos {
+        flex-direction: column;
+    }
+    .sugestao fieldset{
+        margin: -3rem;
+    }
+    button{
+        display: block;
+        min-width: 100%;
+    }
+    #depoimentos h2{
+        margin: -3rem;
+    }
+}

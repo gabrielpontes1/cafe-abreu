@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="café,abreu e lima,pernambuco,cafeteria">
+    <meta name="description" content="Uma cafeteria renomada localizada em Abreu e Lima.">
+    <link rel="stylesheet" href="cafeteria_syle.css">
+    <title>Café Abreu</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-hamburguer">
+            ☰
+        </label>
+        <img src="imagem/logotipo1.png" alt="Logotipo do Café Abreu" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#sugestoes">Sugestões</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <!--sobre-->
+        <section id="sobre">
+            <div class="introduzir">
+                <h1>Café Abreu</h1>
+                <p>Mais do que servir café, queremos ser o lugar do seu intervalo</p>
+            </div>
+
+            <h2>Sobre nós</h2>
+            <p class="paragrafo_sobre">A Café Abreu nasceu do gosto simples por um bom café e da vontade de criar um lugar onde as pessoas pudessem desacelerar. Desde o início, nosso compromisso é com grãos selecionados, torra artesanal e aquele cuidado de quem prepara cada xícara pensando em quem vai tomar.</p>
+            <p class="paragrafo_sobre">Mais do que servir café, queremos ser o lugar do seu intervalo. Nosso ambiente foi pensado para ser aconchegante, com aquele cheirinho de café fresco que já entra pela porta.</p>
+        </section>
+        <!--cardapio-->
+        <section id="cardapio">
+            <form>
+                <h2>Cardápio</h2>
+                <h3>Bebidas</h3>
+                    <article>
+                        <img src="imagem/cafe_espresso.webp" alt="Xícara de café espresso">
+
+                        <div class="informacoes_produto">
+                            <h4>Café espresso</h4>
+                            <p>Café puro, encorpado e intenso, extraído na hora — a base de todo bom café.</p>
+                            <p>R$ 6,50</p>
+                            <div class="adicionar">
+                                <input type="checkbox" name="cafe_espresso" id="cafe_espresso" value="6.50">
+                                <label for="cafe_espresso">adicionar</label>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                            <img src="imagem/capuccino.webp" alt="Xícara de cappuccino com arte na espuma">
+
+                            <div class="informacoes_produto">
+                                <h4>Cappuccino Cremoso</h4>
+                                <p>Espresso com leite vaporizado e uma camada generosa de espuma, finalizado com canela.</p>
+                                <p>R$ 9,90</p>
+                                <div class="adicionar">
+                                    <input type="checkbox" name="Cappuccino" id="Cappuccino" value="9.90">
+                                    <label for="Cappuccino">adicionar</label>
+                                </div>
+                            </div>
+                    </article>
+                    <article>   
+                        <img src="imagem/mocha_gelado.webp" alt="Dois copos de mocha gelado com canudo">
+
+                        <div class="informacoes_produto">
+                            <h4>Mocha Gelado</h4>
+                            <p>Café, chocolate e leite bem gelados, coberto com chantilly — para quem gosta de um café mais doce.</p>
+                            <p>R$ 12,50</p>
+                            <div class="adicionar">
+                                <input type="checkbox" name="mocha_gelado" id="mocha_gelado" value="12.50">
+                                <label for="mocha_gelado">adicionar</label>
+                            </div>
+                        </div>
+                    </article>
+                <h3>Acompanhamentos</h3>
+                    <article>
+                        <img src="imagem/pao-de-queijo_1760622684361-1140x570.webp" alt="Prato com pão de queijo artesanal">
+                        
+                        <div class="informacoes_produto">
+                            <h4>Pão de Queijo Artesanal (porção)</h4>
+                            <p>Quentinho, feito na casa, perfeito pra acompanhar qualquer bebida do cardápio.</p>
+                            <p>R$ 8,00</p> 
+                            <div class="adicionar">
+                                <input type="checkbox" name="pao_de_queijo" id="pao_de_queijo" value="8.00">
+                                <label for="pao_de_queijo">adicionar</label>
+                            </div>
+                        </div>
+                    </article>
+                <button type="submit">Finalizar</button>
+                
+            </form>
+        </section>
+        <!--depoimentos-->
+        <section id="depoimentos">
+            <h2>Depoimentos</h2>
+            <div class="lista_depoimentos">
+            <article>
+                <h3>Depoimento 1</h3>
+                <p>"O café daqui é simplesmente incrível, e o atendimento é sempre com um sorriso. Virou parada obrigatória toda manhã antes do trabalho."</p>
+                <p>- Mariana Costa</p>
+            </article>
+            <article>
+                <h3>Depoimento 2</h3>
+                <p>"Ambiente aconchegante, perfeito pra trabalhar com o notebook. O cappuccino é o melhor que já tomei na região."</p>
+                <p>— Rafael Souza</p>
+            </article>
+            <article>
+                <h3>Depoimento 3</h3>
+                <p>"Levei minha família num domingo e todo mundo amou. O pão de queijo é surreal, recomendo demais!"</p>
+                <p>— Juliana Andrade</p>
+            </article>
+            </div>
+        </section>
+        <!--contato-->
+        <section id="contato">
+            <h2>Contato</h2>
+            <table>
+                <caption>Onde estamos</caption>
+                <tbody>
+                    <tr>
+                        <th>Endereço</th>
+                        <td>Rua do Cajueiro, Centro, Abreu e Lima - PE</td>
+                    </tr>
+                    <tr>
+                        <th>Telefone</th>
+                        <td>(81) 99999-9999</td>
+                    </tr>
+                    <tr>
+                        <th>E-mail</th>
+                        <td>cafeteriaabreu@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Horário de funcionamento</th>
+                        <td>(segunda a sexta) 7:00 às 16:00 <br>(fim de semana) 7:00 às 12:00<br></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+        <section id="sugestoes">
+            <h2>Fale Conosco</h2>
+            <form>
+                <div class="sugestao">
+                    <fieldset>
+                        <legend>Seus dados</legend>
+
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+
+                        <label for="comentario">Comentário</label>
+                        <textarea id="comentario" name="comentario" required></textarea>
+                        
+                        <button type="submit">enviar</button>
+                    </fieldset>
+                    
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>Café Abreu</p>
+        <p>Rua do Cajueiro, Centro, Abreu e Lima - PE</p>
+        <p>Telefone: (81) 99999-9999</p>
+        <p>Email: cafeteriaabreu@gmail.com</p>
+
+        <nav class="navegar_footer">
+            <a href="#sobre">Sobre</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
+            <a href="#sugestoes">Sugestões</a>
+        </nav>
+
+        <p>&copy; 2026 Café Abreu</p>
+    </footer>
+</body>
+</html>
